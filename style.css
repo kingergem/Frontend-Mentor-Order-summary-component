@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500&family=Outfit:wght@400;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+html {
+	font-size: 16px;
+}
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 100vh;
+	overflow: hidden;
+	font-family: 'Red Hat Display';
+	background: hsl(225, 100%, 94%);
+}
+
+main {
+	width: 30%;
+	min-width: 335px;
+	box-sizing: border-box;
+	background: teal;
+	min-height: 85%;
+	border-radius: 10px;
+	background: hsl(225, 100%, 98%);
+	box-shadow: 0 0 10px #555;
+				0 0 20px #aaa;
+				
+}
+.img {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.content {
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+main .img {
+	background-image: url(images/illustration-hero.svg);
+    height: 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+main .content {
+	text-align:center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px;
+}
+.content .pricing {
+	display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    flex-direction: row;
+	width: 90%;
+	background: hsl(224deg 26% 94%);
+}
+.pricing .icon-music {
+	background: url(images/icon-music.svg);
+	background-size: cover;
+	width: 17%;
+	margin-right: 10px;
+}
+.pricing .pricing-plan {
+	display: flex;
+	flex-direction: column;
+}
+.pricing-plan h2, .pricing-plan p  {
+	margin: 0;
+	padding: 0;
+}
+.pricing p {
+	margin-left: 20px;
+}
+.pricing p a {
+	color: #3023ba;
+	cursor: pointer;
+}
+.pricing p a:hover {
+	color: #827dc9;
+	text-decoration: none;
+}
+
+.content > p, .pricing-plan > p, .content .cancel-order {
+	color: hsl(224, 23%, 55%);
+}
+.cancel-order{
+	cursor: pointer;
+}
+.content .pay-order {
+	background: hsl(245, 75%, 52%);
+	color: hsl(225, 100%, 98%);
+	cursor: pointer;
+}
+.content .pay-order:hover{
+	background: #766cf1;
+}
+button {
+	width: 85%;
+	padding: 1em;
+	font-size: 1rem;
+	margin: 10px 0;
+	font-weight: bold;
+	border: none;
+	border-radius: .5rem;
+}
+.cancel-order:hover{
+	color: #222b45;
+}
